@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+}
+a {
+    text-decoration: none;
+}
+
+.logo-wrapper {
+    display: flex;
+    gap: 0px;
+}
+
+.logo-wrapper-mobile {
+    display: flex;
+}
+
+.bottom_header {
+    background-color: #FFD443;
+}
+
+.top_header {
+
+    background: linear-gradient(180deg, rgb(217 0 4) 30%, rgb(143 2 4 / 93%) 100%);
+}
+#navbarScroll li a{
+    font-weight: bold;
+}
+
+.btn-red,
+.red_btn {
+    background: linear-gradient(180deg, rgb(217 0 4) 30%, rgb(176 0 3) 100%) !important;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.btn-red:hover{
+    color: #fff;
+}
+.red_btn:hover {
+    color: #fff;
+}
+
+.bottom_header {
+    background-image: url('/assets/images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* banner */
+.banner_section {
+    height: 593px;
+    /* background-color: orange; */
+    background-image: url('/assets/images/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.otp-text {
+    text-align: right;
+}
+
+/* login */
+.banner_form {
+    background-color: #FFD4D5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.register_form_wrap{
+    background-image: url('../images/from-background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.add_devotee{
+    text-align: right;
+}
+
+.add_devotee button{
+    font-size: 16px;
+    color: #B7070A;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+}
+
+.booking-hostory table{
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+}
+.booking-hostory table th{
+    padding: 10px;
+}
+.status-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    display: inline-block; /* Added to align boxes horizontally */
+  }
+
+  .available {
+    background-color: green;
+  }
+
+  .not-available {
+    background-color: red;
+  }
+
+  .register_form_wrap .label {
+    margin-left: 5px;
+    display: inline-block;
+  }
+
+  .clr{
+    background-color: #A8A8A8;
+    border-radius: 15px;
+  }
+
+/* request loader css start */
+.request-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007a;
+    z-index: 10000;
+    display: none;
+}
+
+.request-loader img {
+    position: fixed;
+    display: none;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.request-loader.show {
+    display: block;
+}
+
+.request-loader.show img {
+    display: block;
+}
+/* request loader css end */
+
+@media (max-width:991px) {
+    .logo-wrapper-mobile {
+        display: block !important;
+    }
+
+    #desk_logo {
+        display: none;
+    }
+    .mobile_logo{
+        display: block!important;
+    }
+    .bottom_header{
+        background: linear-gradient(180deg, rgb(217 0 4) 30%, rgb(143 2 4 / 93%) 100%);
+    }
+    .banner_section{
+        height: 100vh;
+    }
+    #mb-lang {
+        display: block !important;
+    }
+}
+
+/* datepicker */
+.datepicker-dropdown {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid orange;
+    padding: 10px;
+    width: 280px; /* Adjust the width as needed */
+  }
+
+  /* Custom styles for the calendar */
+  .datepicker table {
+    width: 100%;
+    margin: 0;
+  }
+
+
+  .payment-summary-wrapper{
+    background-color: #f0f0f0;
+    height: 100vh;
+  }
+
+.payment-summary-box {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    .payment-summary-box{
+        padding: 15px!important;
+    }
+    .banner_section {
+        height: 100vh;
+    }
+    #navbarScroll li a{
+       color: #fff;
+    }
+    .login-btn{
+        margin-bottom: 15px;
+    }
+    .modalities-wrapper ul li, .modalities-wrapper label {
+        font-size: 14px;
+    }
+}
+
+
+.navbar-nav-scroll{
+    --bs-scroll-height: auto!important;
+}
+
+.navbar-light .navbar-toggler{
+    background-color: #fff;
+}
+
+
+/* booking details show */
+.bd-show table {
+    width: 100%;
+    border-collapse: collapse;
+  }
